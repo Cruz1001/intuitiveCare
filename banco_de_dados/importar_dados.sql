@@ -1,0 +1,60 @@
+COPY PlanosSaude(Registro_ANS, CNPJ, Razao_Social, Nome_Fantasia, Modalidade, Logradouro, Numero, Complemento, Bairro, Cidade, UF, CEP, DDD, Telefone, Fax, Endereco_eletronico, Representante, Cargo_Representante, Regiao_de_Comercializacao, Data_Registro_ANS)
+FROM 'C:\Program Files\PostgreSQL\17\data\Data\Relatorio_cadop.csv'
+DELIMITER ';'
+CSV HEADER;
+
+COPY ContasContabeis(DATA, REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, VL_SALDO_INICIAL, VL_SALDO_FINAL)
+FROM 'C:\Program Files\PostgreSQL\17\data\Data\1T2023.csv'
+DELIMITER ';' 
+CSV HEADER
+QUOTE '"'
+NULL AS 'NULL';
+
+COPY ContasContabeis(DATA, REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, VL_SALDO_INICIAL, VL_SALDO_FINAL)
+FROM 'C:\Program Files\PostgreSQL\17\data\Data\2T2023.csv'
+DELIMITER ';' 
+CSV HEADER
+QUOTE '"'
+NULL AS 'NULL';
+
+COPY ContasContabeis(DATA, REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, VL_SALDO_INICIAL, VL_SALDO_FINAL)
+FROM 'C:\Program Files\PostgreSQL\17\data\Data\3T2023.csv'
+DELIMITER ';' 
+CSV HEADER
+QUOTE '"'
+NULL AS 'NULL';
+
+COPY ContasContabeis(DATA, REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, VL_SALDO_INICIAL, VL_SALDO_FINAL)
+FROM 'C:\Program Files\PostgreSQL\17\data\Data\4T2023.csv'
+DELIMITER ';' 
+CSV HEADER
+QUOTE '"'
+NULL AS 'NULL';
+
+COPY ContasContabeis(DATA, REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, VL_SALDO_INICIAL, VL_SALDO_FINAL)
+FROM 'C:\Program Files\PostgreSQL\17\data\Data\1T2024.csv'
+DELIMITER ';' 
+CSV HEADER
+QUOTE '"'
+NULL AS 'NULL';
+
+COPY ContasContabeis(DATA, REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, VL_SALDO_INICIAL, VL_SALDO_FINAL)
+FROM 'C:\Program Files\PostgreSQL\17\data\Data\2T2024.csv'
+DELIMITER ';' 
+CSV HEADER
+QUOTE '"'
+NULL AS 'NULL';
+
+COPY ContasContabeis(DATA, REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, VL_SALDO_INICIAL, VL_SALDO_FINAL)
+FROM 'C:\Program Files\PostgreSQL\17\data\Data\3T2024.csv'
+DELIMITER ';' 
+CSV HEADER
+QUOTE '"'
+NULL AS 'NULL';
+
+COPY ContasContabeis(DATA, REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, VL_SALDO_INICIAL, VL_SALDO_FINAL)
+FROM 'C:\Program Files\PostgreSQL\17\data\Data\4T2024.csv'
+DELIMITER ';' 
+CSV HEADER
+QUOTE '"'
+NULL AS 'NULL';
