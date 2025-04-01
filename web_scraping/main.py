@@ -46,17 +46,15 @@ def obter_links_pdf(url):
 def main():
     url = "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos"
     
-    # Obtém os links dos PDFs
     url_anexo1, url_anexo2 = obter_links_pdf(url)
     
     if not url_anexo1 or not url_anexo2:
-        return  # Sai da execução se os links não forem encontrados
+        return  
     
-    # Baixar os arquivos PDF
+
     baixar_pdf(url_anexo1, 'web_scraping/arquivos/anexo1.pdf')
     baixar_pdf(url_anexo2, 'web_scraping/arquivos/anexo2.pdf')
     
-    # Compactar os PDFs em um arquivo ZIP
     arquivos_pdf = ['web_scraping/arquivos/anexo1.pdf', 'web_scraping/arquivos/anexo2.pdf']
     criar_arquivo_zip(arquivos_pdf, 'web_scraping/arquivos/rol.zip')
 
