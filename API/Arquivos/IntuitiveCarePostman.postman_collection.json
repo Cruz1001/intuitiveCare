@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "23294b98-5a21-4a73-afe2-b96560b64796",
+		"name": "IntuitiveCarePostman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42930028"
+	},
+	"item": [
+		{
+			"name": "get_Operadoras",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buscar-operadoras",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buscar-operadoras"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
