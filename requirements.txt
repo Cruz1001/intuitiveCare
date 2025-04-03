@@ -1,0 +1,11 @@
+requests
+beautifulsoup4
+os
+zipfile
+re
+sys
+pytest
+tabula
+fastapi
+typing
+pydantic
