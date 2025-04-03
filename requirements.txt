@@ -1,6 +1,5 @@
 requests
 beautifulsoup4
-os
 zipfile
 re
 sys
