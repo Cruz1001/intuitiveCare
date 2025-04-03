@@ -37,6 +37,23 @@ python main.py
 
 O processo iniciará a extração, processamento e compactação dos dados.
 
+## Testes Automatizados
+
+Para garantir que as funções estão funcionando corretamente, há um conjunto de testes localizados na pasta transformação_dados/tests/.
+Os testes verificam:
+
+- Se as tabelas são extraídas corretamente do PDF.
+
+- Se o arquivo CSV é gerado corretamente e não está vazio.
+
+- Se o processo de compactação funciona corretamente, garantindo que o CSV está dentro do ZIP.
+
+- Como Executar os Testes
+
+Os testes devem ser executados a partir do diretório transformação_dados/tests/. Para rodá-los, utilize o comando:
+- pytest test_main.py
+
+Isso executará os testes e exibirá os resultados no terminal.
 ## Possíveis Problemas e Soluções
 
 - Erro relacionado ao Java: Certifique-se de que o Java está instalado e configurado no PATH do sistema.

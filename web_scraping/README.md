@@ -65,3 +65,20 @@ Execute o script com o comando:
 2. Erro de diretório não encontrado
 
 - Certifique-se de que a pasta web_scraping/arquivos/ existe antes de executar o script.
+
+## Testes Automatizados
+Para garantir que as funções estão funcionando corretamente, há um conjunto de testes localizados na pasta web_scraping/tests/.
+
+Os testes verificam:
+
+Se os links dos PDFs extraídos da página da ANS são válidos.
+
+Se os arquivos são baixados corretamente e possuem conteúdo.
+
+Se o processo de compactação dos arquivos PDF funciona corretamente.
+
+Como Executar os Testes
+Os testes devem ser executados a partir do diretório web_scraping/tests/. Para rodá-los, utilize o comando:
+- pytest web_scraping/tests/
+
+Isso executará os testes e exibirá os resultados no terminal.

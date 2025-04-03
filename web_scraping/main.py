@@ -29,8 +29,8 @@ def obter_links_pdf(url):
         request.raise_for_status()
         soup = BeautifulSoup(request.content, 'html.parser')
 
-        anexo1 = soup.find('a', text=re.compile(r"Anexo I"), href=re.compile(r".pdf"))
-        anexo2 = soup.find('a', text=re.compile(r"Anexo II"), href=re.compile(r".pdf"))
+        anexo1 = soup.find('a', string=re.compile(r"Anexo I"), href=re.compile(r".pdf"))
+        anexo2 = soup.find('a', string=re.compile(r"Anexo II"), href=re.compile(r".pdf"))
 
         if not anexo1 or not anexo2:
             print("Não foi possível encontrar os anexos PDF.")
