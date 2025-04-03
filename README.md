@@ -56,7 +56,7 @@ projeto/
 - Criar tabelas no banco de dados.
 
 - Importar os dados dos CSVs.
-- 
+  
 - Executar consultas analíticas.
 
 ### Execução:
