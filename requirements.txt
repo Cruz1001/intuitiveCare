@@ -4,3 +4,4 @@ pytest
 tabula
 fastapi
 pydantic
+uvicorn
